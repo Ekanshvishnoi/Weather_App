@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Application</title>
+  <meta name="theme-color" content="#ffffff">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="stylesheet" href="style.css">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="This is an weather application that displays current time weather data for different regions">
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+  <!-- main container -->
+  <div class="weather-container">
+
+    <!-- search section -->
+    <section id="search-section">
+      <div id="search-inputs">
+        <input type="text" id="location-input" placeholder="enter city name" class="search-input" >
+        <button id="search-button" class="search-button">Search</button>
+      </div>
+
+    </section>
+
+    <!-- current weather -->
+    <section id="current-weather" class="weather-section">
+      <h2>Current Weather</h2>
+      <div class="weather-card">
+
+        <div class="weather-info-grid">
+          <!-- Temperature -->
+          <div class="weather-metric">
+            <span class="metric-label">Temprature</span>
+            <span class="metric-value" id="temperature-value">--</span>
+            <span class="metric-unit">°C</span>
+          </div>
+          <!-- condition -->
+          <div class="weather-metric">
+            <span class="metric-label">Condition</span>
+            <span class="metric-value" id="condition-value">--</span>
+          </div>
+          <!-- Humidity -->
+          <div class="weather-metric">
+            <span class="metric-label">Humidity</span>
+            <span class="metric-value" id="humidity-value">--</span>
+          </div>
+          <div class="weather-metric">
+            <span class="metric-label">Wind Speed</span>
+            <span class="metric-value" id="wind-speed-value">--</span>
+            <span class="metric-unit" >km/hr</span>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- forecast for upcoming days -->
+    <section id="forecast" class="weather-section">
+      <h2>5-Day Forecast</h2>
+      <div class="forecast-grid" id="forecast-grid">
+
+      </div>
+
+    </section>
+
+    <!-- historical -->
+    <section id="historical-data" class="weather-section">
+      <h2>Historical Data</h2>
+      <div class="historical-chart-container">
+        <canvas class="historical-data-chart" id="chart-canvas">
+
+        </canvas>
+      </div>
+    
+
+    </section>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
