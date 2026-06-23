@@ -33,4 +33,4 @@ An interactive Weather Forecast Web App with a modern dark UI, built using **HTM
 
 **Ekansh Vishnoi**
 [GitHub Profile](https://github.com/Ekanshvishnoi)
-[LinkedIn Profile](https://www.linkedin.com/in/abhishek-kumar-2a746a247/)
+[LinkedIn Profile](https://www.linkedin.com/in/ekansh-vishnoi/)
